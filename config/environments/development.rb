@@ -90,8 +90,8 @@ Rails.application.configure do
   # mail_logger.formatter = config.log_formatter
 
   # config.action_view.logger = empty_logger
-  # config.active_record.logger = ActiveSupport::TaggedLogging.new(file_logger)
-  # config.logger = ActiveSupport::TaggedLogging.new(stdout_logger)
+  config.active_record.logger = ActiveSupport::TaggedLogging.new(file_logger)
+  config.logger = ActiveSupport::TaggedLogging.new(stdout_logger)
   # config.action_mailer.logger = mail_logger
 
   # config.after_initialize do
